@@ -251,6 +251,11 @@ img { display:block; max-width:100%; }
 .logo:hover { transform: translateY(-1px); }
 .logo:hover .logo-frame { box-shadow: 0 8px 28px rgba(0,0,0,.42); }
 
+/* Medium widths: less horizontal gutter on the logo so nav links breathe */
+@media (max-width: 1440px) and (min-width: 1101px) {
+  .logo { padding: 0 30px; }
+}
+
 /* On non-hero pages, nav sits over cream — give it a tinted bg by default */
 body.solid-nav .nav:not(.scrolled) {
   background: rgba(14,61,43,.96);
