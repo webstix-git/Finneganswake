@@ -256,6 +256,19 @@ img { display:block; max-width:100%; }
   .logo { padding: 0 30px; }
 }
 
+/* Narrow band where full nav wraps — flush nav edges; logo keeps 20px side gutter */
+@media (min-width: 1150px) and (max-width: 1280px) {
+  .nav,
+  .nav.scrolled {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .logo {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 /* On non-hero pages, nav sits over cream — give it a tinted bg by default */
 body.solid-nav .nav:not(.scrolled) {
   background: rgba(14,61,43,.96);
@@ -459,7 +472,29 @@ body.solid-nav .nav:not(.scrolled) {
   max-width: 640px; margin: 0 auto 44px;
   line-height: 1.5; opacity: .92;
 }
-.hero-cta { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.hero-cta {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+/* Medium / short viewports: 20px above copy + below CTAs; section bottom inset so buttons clear the fold */
+@media (max-width: 1100px),
+  ((max-height: 780px) and (max-width: 1280px)) {
+  .hero {
+    padding-bottom: 20px;
+  }
+  .hero-content {
+    padding-top: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .hero-cta {
+    padding-bottom: 20px;
+  }
+}
 
 /* Page hero — short hero used on inner pages */
 .page-hero {
