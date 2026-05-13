@@ -45,7 +45,7 @@ export default function GalleryPage() {
         }
       >
         <span className="eyebrow center">A Look Inside</span>
-        <h1>The <em>Place</em>, The People.</h1>
+        <h1>The <em>Place</em>, The People</h1>
         <p>A familiar amber light, the back patio in July, and the bar after closing — twenty years of evenings, in pictures.</p>
       </section>
 

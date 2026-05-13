@@ -190,7 +190,7 @@ export default function HomePage() {
 
           <div className="story-text reveal">
             <span className="eyebrow">A Quietly Romantic Pub</span>
-            <h2 className="h-section">A Love <em>Story</em>, With Burgers.</h2>
+            <h2 className="h-section">A Love <em>Story</em>, With Burgers</h2>
             <p className="lede">Anne was waiting tables. Clayton was a regular with a suspiciously consistent Wednesday schedule.</p>
             <p>They got married. They bought the bar. Twenty years on, Finnegan&apos;s is still where they show up most days — and, as it turns out, the favorite engagement-photo spot of approximately every couple they&apos;ve ever served.</p>
             <p>We pour for our regulars, we feed the late shift, and we sponsor a different local charity every quarter. If you haven&apos;t been in yet, you&apos;ve got some catching up to do.</p>

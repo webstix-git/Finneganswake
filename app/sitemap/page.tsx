@@ -51,7 +51,7 @@ export default function SitemapPage() {
         }}
       >
         <span className="eyebrow center">Find Your Way</span>
-        <h1>The <em>Sitemap</em>.</h1>
+        <h1>The <em>Sitemap</em></h1>
         <p>Every corner of the website, laid out plain. Skip past the front page and head wherever you need to go.</p>
       </section>
 

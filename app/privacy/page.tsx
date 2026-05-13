@@ -127,7 +127,7 @@ export default function PrivacyPage() {
         }}
       >
         <span className="eyebrow center">The Small Print</span>
-        <h1>Privacy <em>Policy</em>.</h1>
+        <h1>Privacy <em>Policy</em></h1>
         <p>A short, plain-English explanation of what we collect, what we don&apos;t, and what we do with anything you send us.</p>
       </section>
 

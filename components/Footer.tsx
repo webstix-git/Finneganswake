@@ -67,7 +67,7 @@ export default function Footer() {
             <Image
               className="foot-logo"
               src={logoMark}
-              alt="Finnegan's Wake"
+              alt="Finnegan's Wake Irish Pub — Springfield, Missouri, est. 2006. Circular logo with harp and griffin."
               width={220}
               height={220}
             />

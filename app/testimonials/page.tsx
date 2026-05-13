@@ -63,7 +63,7 @@ export default function TestimonialsPage() {
         }
       >
         <span className="eyebrow center">Word On The Street</span>
-        <h1>What The <em>Regulars</em> Say.</h1>
+        <h1>What The <em>Regulars</em> Say</h1>
         <p>Pulled from Google. Twenty years of evenings, in the words of the people who keep coming back.</p>
       </section>
 
@@ -72,7 +72,7 @@ export default function TestimonialsPage() {
       <section className="testi" style={{ borderTop: "none" }}>
         <div className="testi-head reveal">
           <span className="eyebrow center">Google Reviews</span>
-          <h2 className="h-section">A Quiet <em>Average</em>.</h2>
+          <h2 className="h-section">A Quiet <em>Average</em></h2>
           <div className="stars">★ ★ ★ ★ ★</div>
           <div className="rating"><strong>4.8</strong> &nbsp;·&nbsp; 1,247 Google reviews</div>
         </div>

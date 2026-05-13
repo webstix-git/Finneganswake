@@ -26,7 +26,7 @@ export default function ContactPage() {
         }
       >
         <span className="eyebrow center">Come On In</span>
-        <h1>Find <em>Us</em>.</h1>
+        <h1>Find <em>Us</em></h1>
         <p>305 South Avenue, on the corner of South &amp; Walnut. Call ahead for groups, ask for Anne for private events.</p>
       </section>
 
@@ -36,7 +36,7 @@ export default function ContactPage() {
         <div className="visit-inner">
           <div className="visit-info reveal">
             <span className="eyebrow" style={{ color: "var(--gold-soft)" }}>Come On In</span>
-            <h2>Find Us On <em>South Avenue</em>.</h2>
+            <h2>Find Us On <em>South Avenue</em></h2>
 
             <div className="visit-block">
               <div className="label">Address</div>
@@ -94,7 +94,7 @@ export default function ContactPage() {
         <div className="contact-form-inner">
           <div className="lead reveal">
             <span className="eyebrow">Drop A Line</span>
-            <h2 className="h-section">Get In <em>Touch</em>.</h2>
+            <h2 className="h-section">Get In <em>Touch</em></h2>
             <p>For private events, large groups, or just to say hello — leave us a note. We&apos;ll get back within a day or two.</p>
             <div className="story-sig" style={{ marginTop: 32 }}>
               <div>

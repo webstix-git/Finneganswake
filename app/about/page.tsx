@@ -26,7 +26,7 @@ export default function AboutPage() {
         }
       >
         <span className="eyebrow center">A Quietly Romantic Pub</span>
-        <h1>Our <em>Story</em>.</h1>
+        <h1>Our <em>Story</em></h1>
         <p>Springfield&apos;s oldest Irish pub. The longest-running trivia in town. Twenty years of really good food and the most familiar faces downtown.</p>
       </section>
 
@@ -63,7 +63,7 @@ export default function AboutPage() {
 
           <div className="story-text reveal">
             <span className="eyebrow">A Love Story, With Burgers</span>
-            <h2 className="h-section">Anne &amp; <em>Clayton</em>.</h2>
+            <h2 className="h-section">Anne &amp; <em>Clayton</em></h2>
             <p className="lede">Anne was waiting tables. Clayton was a regular with a suspiciously consistent Wednesday schedule.</p>
             <p>They got married. They bought the bar. Twenty years on, Finnegan&apos;s is still where they show up most days — and, as it turns out, the favorite engagement-photo spot of approximately every couple they&apos;ve ever served. (We&apos;ve lost count of the proposals at the corner booth.)</p>
             <p>We pour for our regulars, we feed the late shift, and we sponsor a different local charity every quarter. If you haven&apos;t been in yet, you&apos;ve got some catching up to do.</p>
@@ -81,7 +81,7 @@ export default function AboutPage() {
         <div className="values-inner">
           <div className="values-head reveal">
             <span className="eyebrow center">What Matters</span>
-            <h2 className="h-section">Four <em>Things</em> We Care About.</h2>
+            <h2 className="h-section values-care-title">Four <em>Things</em> We Care About</h2>
           </div>
 
           <div className="values-grid">
@@ -116,7 +116,7 @@ export default function AboutPage() {
           </div>
           <div className="center reveal">
             <span className="eyebrow center">The House Vibe</span>
-            <h2 className="h-section" style={{ marginTop: 24 }}>A Place To <em>Meet</em>.</h2>
+            <h2 className="h-section" style={{ marginTop: 24 }}>A Place To <em>Meet</em></h2>
           </div>
           <div className="right reveal">
             <span className="num">20</span>
