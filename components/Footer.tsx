@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logoMark from "@/public/logo.png";
+import logoMark from "@/public/images/finnegan-logo.jpeg";
 
 const MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=305+South+Avenue+Springfield+MO+65806";

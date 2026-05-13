@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import logoMark from "@/public/logo.png";
+import logoMark from "@/public/images/finnegan-logo.jpeg";
 
 const LEFT = [
   { href: "/menu", label: "Menu" },
