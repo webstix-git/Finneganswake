@@ -1728,4 +1728,96 @@ body.solid-nav .nav:not(.scrolled) {
   .est-stat:nth-child(2) { border-right: none; }
   .featured, .events, .story, .menu-preview, .home-reviews, .home-gallery-section, .gallery, .testi, .contact-form-wrap { padding: 80px 24px; }
   .page-hero { padding: calc(var(--nav-h) + 32px) 24px 64px; }
+  .thank-you-content { padding: 80px 24px; }
+  .thank-you-card { padding: 48px 32px; }
+  .thank-you-details { flex-direction: column; gap: 24px; }
+}
+
+/* ===== THANK YOU PAGE ===== */
+.thank-you-content {
+  background: var(--cream);
+  padding: 120px 48px;
+}
+.thank-you-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.thank-you-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 64px 56px;
+  text-align: center;
+  box-shadow: 0 4px 32px rgba(30, 45, 35, .06);
+}
+.thank-you-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-deep) 100%);
+  color: var(--gold);
+  margin-bottom: 32px;
+}
+.thank-you-card .eyebrow {
+  display: block;
+  margin-bottom: 12px;
+}
+.thank-you-card .h-section {
+  margin-bottom: 32px;
+}
+.thank-you-text {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ink);
+  opacity: .85;
+  margin-bottom: 16px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.thank-you-text:last-of-type {
+  margin-bottom: 40px;
+}
+.thank-you-details {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  padding: 32px 0;
+  border-top: 1px solid rgba(30, 45, 35, .1);
+  border-bottom: 1px solid rgba(30, 45, 35, .1);
+}
+.detail-item {
+  text-align: center;
+}
+.detail-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: var(--green);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.detail-value {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--ink);
+}
+.detail-value a,
+a.detail-value {
+  color: var(--green);
+  text-decoration: none;
+  transition: color .2s;
+}
+.detail-value a:hover,
+a.detail-value:hover {
+  color: var(--gold);
+}
+.thank-you-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 48px;
+  flex-wrap: wrap;
 }
