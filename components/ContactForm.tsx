@@ -1,38 +1,34 @@
 "use client";
 
-import { useState } from "react";
+import { useRouter } from "next/navigation";
+
+const FORM_ACTION =
+  "https://ywwxvriolxwuqcwjaluh.supabase.co/functions/v1/form-submit/0717a6f0-6e4d-457d-bc0c-17f38fe0a4fb";
 
 export default function ContactForm() {
-  const [sent, setSent] = useState(false);
+  const router = useRouter();
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const payload = Object.fromEntries(formData.entries());
+    const form = e.currentTarget;
     try {
-      await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+      await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
       });
     } catch {
-      // swallow — show the optimistic confirmation regardless for now
+      // redirect to thank-you even if the request fails (e.g. network)
     }
-    setSent(true);
+    router.push("/thank-you");
   };
 
-  if (sent) {
-    return (
-      <div className="reveal" style={{ paddingTop: 12 }}>
-        <p style={{ fontFamily: "var(--display)", fontStyle: "italic", fontSize: 22, color: "var(--green)", lineHeight: 1.55 }}>
-          Thanks for the note — we&apos;ll be in touch within a day or two.
-        </p>
-      </div>
-    );
-  }
-
   return (
-    <form className="contact-form reveal" onSubmit={onSubmit}>
+    <form
+      className="contact-form reveal"
+      action={FORM_ACTION}
+      method="POST"
+      onSubmit={onSubmit}
+    >
       <div className="field">
         <label htmlFor="name">Your Name</label>
         <input id="name" name="name" type="text" required placeholder="First & last" />

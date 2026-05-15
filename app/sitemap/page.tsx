@@ -32,6 +32,7 @@ const SECTIONS: { heading: string; items: { label: string; href: string; blurb: 
     heading: "Visit & Information",
     items: [
       { label: "Find Us & Contact", href: "/contact", blurb: "Address, hours, phone, and the booking form." },
+      { label: "Thank You", href: "/thank-you", blurb: "Confirmation after you send us a message." },
       { label: "Privacy Policy", href: "/privacy", blurb: "How we handle your information." },
       { label: "Sitemap", href: "/sitemap", blurb: "You are here." },
     ],
