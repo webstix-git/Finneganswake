@@ -1,0 +1,44 @@
+{
+  "promotions": [
+    {
+      "id": "pub-trivia",
+      "tag": "Wednesdays · Weekly",
+      "title": {
+        "before": "Pub",
+        "emphasis": "Trivia",
+        "after": ""
+      },
+      "when": "Every Wednesday, 7:30 p.m. sharp.",
+      "desc": "The longest-running trivia night in Springfield. Six rounds, no phones, and fierce tiebreakers that keep teams coming back week after week. A local favorite for over fourteen years.",
+      "statLabel": "Held since 2010",
+      "statValue": "832 nights · 5,000+ players",
+      "featured": true
+    },
+    {
+      "id": "live-from-downtown",
+      "tag": "May – September",
+      "title": {
+        "before": "Live From",
+        "emphasis": "Downtown",
+        "after": ""
+      },
+      "when": "Saturdays on The Square.",
+      "desc": "We provide the bartending services for Live From Downtown, every Saturday May through September. Local songwriters, fiddlers, and small bands take the square. Pints kept moving.",
+      "statLabel": "This Season",
+      "statValue": "21 acts booked"
+    },
+    {
+      "id": "finnsmas",
+      "tag": "November – January",
+      "title": {
+        "before": "",
+        "emphasis": "Finnsmas",
+        "after": ""
+      },
+      "when": "A holiday pop-up, top to bottom.",
+      "desc": "We hang every lit thing we own and let the bar lean into the season. Hot toddies, a rotating holiday menu, and a tree in every corner that has corners.",
+      "statLabel": "Returns",
+      "statValue": "Friday after Thanksgiving"
+    }
+  ]
+}

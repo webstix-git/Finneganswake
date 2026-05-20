@@ -50,10 +50,8 @@ export default function ContactPage() {
             <div className="visit-block">
               <div className="label">Hours</div>
               <div className="content">
-                <em>Tue – Thu</em> 4 pm – Midnight<br />
-                <em>Fri – Sat</em> 4 pm – 2 am<br />
-                <em>Sunday</em> 11 am – 10 pm
-                <small>Closed Mondays. Kitchen until 30 min before close.</small>
+                <em>Mon</em> Closed<br />
+                <em>Tue – Sun</em> 4 p.m. – Close
               </div>
             </div>
 

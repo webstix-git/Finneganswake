@@ -104,12 +104,8 @@ export default function Footer() {
             <div className="foot-hours">
               <span className="day">Mon</span>
               <span>Closed</span>
-              <span className="day">Tue – Thu</span>
-              <span>4 — 12</span>
-              <span className="day">Fri – Sat</span>
-              <span>4 — 2</span>
-              <span className="day">Sun</span>
-              <span>11 — 10</span>
+              <span className="day">Tue – Sun</span>
+              <span>4 p.m. – Close</span>
             </div>
           </div>
 

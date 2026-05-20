@@ -1,0 +1,186 @@
+{
+  "sections": [
+    {
+      "id": "apps",
+      "eyebrow": "Section i.",
+      "title": {
+        "before": "",
+        "emphasis": "Apps",
+        "after": ""
+      },
+      "columns": [
+        {
+          "id": "snacks-bites",
+          "heading": "Snacks & Bites",
+          "subheading": "To start the table",
+          "items": [
+            {
+              "id": "pub-pretzels",
+              "title": {
+                "before": "Pub",
+                "emphasis": "Pretzels",
+                "after": ""
+              },
+              "desc": "Served with beer cheese.",
+              "price": "$8"
+            },
+            {
+              "id": "fried-green-beans",
+              "title": {
+                "before": "Fried Green",
+                "emphasis": "Beans",
+                "after": ""
+              },
+              "desc": "Served with choice of sauce.",
+              "price": "$8"
+            },
+            {
+              "id": "mozzarella-sticks",
+              "title": {
+                "before": "Mozzarella",
+                "emphasis": "Sticks",
+                "after": ""
+              },
+              "desc": "Served with marinara.",
+              "price": "$8"
+            },
+            {
+              "id": "toasted-ravioli",
+              "title": {
+                "before": "Toasted",
+                "emphasis": "Ravioli",
+                "after": ""
+              },
+              "desc": "Served with marinara.",
+              "price": "$10"
+            },
+            {
+              "id": "menu-mp88w2p3-eockcu",
+              "title": {
+                "before": "Blackened Corn",
+                "emphasis": "Ribs",
+                "after": ""
+              },
+              "desc": "Served with chipotle aïoli.",
+              "price": "$8"
+            }
+          ]
+        },
+        {
+          "id": "wings-salad",
+          "heading": "Wings & Salad",
+          "subheading": "From the fryer & the cooler",
+          "items": [
+            {
+              "id": "jumbo-wings",
+              "title": {
+                "before": "Jumbo",
+                "emphasis": "Wings",
+                "after": ""
+              },
+              "desc": "Served with choice of sauce or dry rub. 6 wings $10 or 12 wings $15.",
+              "price": "$10 / $15"
+            },
+            {
+              "id": "salad",
+              "title": {
+                "before": "",
+                "emphasis": "Salad",
+                "after": ""
+              },
+              "desc": "Iceberg lettuce, tomatoes, fried onion straws, parmesan cheese, and ranch. Side salad $4, regular salad $6, add fried chicken +$4.",
+              "price": "$4 / $6"
+            }
+          ]
+        }
+      ],
+      "note": "Sauces: Chipotle Aïoli · Ranch · Buffalo · Fry Sauce · BBQ · Nashville Hot"
+    },
+    {
+      "id": "mains",
+      "eyebrow": "Section ii.",
+      "title": {
+        "before": "",
+        "emphasis": "Mains",
+        "after": ""
+      },
+      "intro": "All entrées served with choice of fries or sweet potato fries. Sub side salad $1.50, add side salad $3.",
+      "columns": [
+        {
+          "id": "burgers",
+          "heading": "Burgers",
+          "subheading": "Smashed on the flat-top",
+          "items": [
+            {
+              "id": "half-lb-smashburger",
+              "title": {
+                "before": "½ Lb.",
+                "emphasis": "Smashburger",
+                "after": ""
+              },
+              "desc": "Two homemade patties, choice of American or Pepperjack cheese.",
+              "price": "$12"
+            },
+            {
+              "id": "spicy-smashburger",
+              "title": {
+                "before": "Spicy",
+                "emphasis": "Smashburger",
+                "after": ""
+              },
+              "desc": "Two homemade patties, Pepperjack, fried onion straws, pickled jalapeños, chipotle aïoli.",
+              "price": "$13"
+            }
+          ]
+        },
+        {
+          "id": "chicken-fish",
+          "heading": "Chicken & Fish",
+          "subheading": "Fried hot, served fast",
+          "items": [
+            {
+              "id": "fried-chicken-sandwich",
+              "title": {
+                "before": "Fried",
+                "emphasis": "Chicken",
+                "after": "Sandwich"
+              },
+              "desc": "Choice of American or Pepperjack, lettuce, tomato, pickles, mayo.",
+              "price": "$13"
+            },
+            {
+              "id": "nashville-hot-chicken-sandwich",
+              "title": {
+                "before": "Nashville",
+                "emphasis": "Hot",
+                "after": "Chicken Sandwich"
+              },
+              "desc": "Fried chicken tossed in Nashville hot, lettuce, tomato, pickles.",
+              "price": "$14"
+            },
+            {
+              "id": "fish-n-chips",
+              "title": {
+                "before": "Fish 'n",
+                "emphasis": "Chips",
+                "after": ""
+              },
+              "desc": "Served with house-made fry sauce.",
+              "price": "$12"
+            },
+            {
+              "id": "chicken-strips",
+              "title": {
+                "before": "Chicken",
+                "emphasis": "Strips",
+                "after": ""
+              },
+              "desc": "Served with choice of sauce.",
+              "price": "$12"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

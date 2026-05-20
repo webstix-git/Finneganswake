@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 
 const PREVIEW_PHOTOS = [
-  { alt: "Inside Finnegan's Wake at the bar", src: "/images/bar-interior.png" },
+  { alt: "Inside Finnegan's Wake bar with guests seated", src: "/images/gallery-bar-interior-new.png" },
   { alt: "Bangers and mash on the bar", src: "/images/dish-bangers.png" },
   { alt: "Bartender pouring a drink", src: "/images/bartender.png" },
   { alt: "Pool table and friends at the pub", src: "/images/pool-table-night.png" },

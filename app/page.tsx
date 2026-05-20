@@ -72,8 +72,7 @@ export default function HomePage() {
       <section className="featured" id="menu">
         <div className="featured-header">
           <div className="left reveal">
-            <p>Three plates we&apos;d stake the place on. The kitchen has been
-            sharpening these since the year Twitter launched.</p>
+            <p>Three regulars that never miss: a hot chicken sandwich, a proper cheeseburger, and the apps everyone orders for the table.</p>
           </div>
           <div className="center reveal">
             <span className="eyebrow center">The House Specialties</span>
@@ -81,7 +80,7 @@ export default function HomePage() {
           </div>
           <div className="right reveal">
             <span className="num">03</span>
-            <span>plates worth the trip</span>
+            <span>regulars worth the trip</span>
           </div>
         </div>
 
@@ -89,39 +88,39 @@ export default function HomePage() {
           <article className="dish reveal">
             <div className="dish-frame">
               <span className="dish-num">i.</span>
-              <span className="dish-badge">House Favourite</span>
-              <img alt="The Finnegan Burger with fries at Finnegan&apos;s Wake" src="/images/dish-spicy-burger.png" />
+              <span className="dish-badge">Hot Seller</span>
+              <img alt="Nashville hot chicken sandwich at Finnegan&apos;s Wake" src="/images/nashville-hot-chicken-sandwich.png" />
             </div>
             <div className="dish-info">
-              <div className="kind">Smashed · Double Patty</div>
-              <h3>The <em>Finnegan</em><br />Burger</h3>
-              <p>Two thin patties, smashed hard on a flat-top, with American, dill chips, house sauce, and a soft brioche bun. The reason people keep coming back.</p>
+              <div className="kind">Crispy Chicken · Nashville Heat</div>
+              <h3>Nashville Hot<br /><em>Chicken Sandwich</em></h3>
+              <p>Crispy fried chicken tossed in Nashville hot with pickles, lettuce, and tomato on a toasted bun. Big flavor, just the right kick.</p>
             </div>
           </article>
 
           <article className="dish reveal">
             <div className="dish-frame">
               <span className="dish-num">ii.</span>
-              <span className="dish-badge">On Marble Rye</span>
-              <img alt="The Reuben with fries at Finnegan&apos;s Wake" src="/images/dish-reuben.png" />
+              <span className="dish-badge">House Classic</span>
+              <img alt="Regular cheeseburger and fries at Finnegan&apos;s Wake" src="/images/dish-spicy-burger.png" />
             </div>
             <div className="dish-info">
-              <div className="kind">Guinness-Braised · Grilled Hard</div>
-              <h3>The Reuben, <em>Properly</em></h3>
-              <p>House corned beef, kraut, Russian, marble rye, and a flat-top finish until the cheese runs. Hand-cut fries on the side.</p>
+              <div className="kind">Smashed Patty · American Cheese</div>
+              <h3>Regular <em>Cheeseburger</em></h3>
+              <p>A straight-up pub cheeseburger: smashed beef, melted American, pickles, onion, and house sauce on a soft bun. Served with fries.</p>
             </div>
           </article>
 
           <article className="dish reveal">
             <div className="dish-frame">
               <span className="dish-num">iii.</span>
-              <span className="dish-badge">Irish Classic</span>
-              <img alt="Bangers and mash at Finnegan&apos;s Wake" src="/images/dish-bangers.png" />
+              <span className="dish-badge">For The Table</span>
+              <img alt="Mozzarella sticks and toasted ravioli at Finnegan&apos;s Wake" src="/images/mozzarella-sticks-toasted-ravioli.png" />
             </div>
             <div className="dish-info">
-              <div className="kind">Grilled · Guinness Gravy</div>
-              <h3>Bangers &amp; <em>Mash</em></h3>
-              <p>Grilled sausages on a bed of homemade mashed potatoes, caramelized onions, and Guinness gravy — the sort of plate that keeps you through winter.</p>
+              <div className="kind">Crispy Apps · Marinara On Side</div>
+              <h3>Mozzarella Sticks<br />&amp; <em>Toasted Ravioli</em></h3>
+              <p>Golden mozzarella sticks and toasted ravs with warm marinara. A classic Midwest bar-table starter for sharing.</p>
             </div>
           </article>
         </div>
@@ -143,7 +142,7 @@ export default function HomePage() {
             <span className="event-tag">Wednesdays · Weekly</span>
             <h3 className="event-title">Pub <em>Trivia</em></h3>
             <p className="event-when">Every Wednesday, 7:30 p.m. sharp.</p>
-            <p className="event-desc">The longest-running trivia night in Springfield. Six rounds, no phones, vicious tiebreakers. House teams have been losing the same final question for fourteen years and counting.</p>
+            <p className="event-desc">The longest-running trivia night in Springfield. Six rounds, no phones, and fierce tiebreakers that keep teams coming back week after week. A local favorite for over fourteen years.</p>
             <div className="event-foot">
               <div className="stat"><strong>Held since 2010</strong>832 nights · 5,000+ players</div>
               <span className="event-arrow">↗</span>

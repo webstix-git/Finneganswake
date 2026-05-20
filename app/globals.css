@@ -402,9 +402,9 @@ body.solid-nav .nav:not(.scrolled) {
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background-image: url('/images/hero-banner.png');
+  background-image: url('/images/hero-home-bar-wide.png');
   background-size: cover; background-position: center 38%;
-  filter: brightness(.64) saturate(.9);
+  filter: brightness(0.55) saturate(0.9);
   transform: scale(1.05);
 }
 .hero-bg::after {
@@ -412,9 +412,9 @@ body.solid-nav .nav:not(.scrolled) {
   background:
     radial-gradient(
       ellipse 96% 80% at 50% 40%,
-      rgba(8,32,25,.26) 0%,
-      rgba(8,32,25,.38) 48%,
-      rgba(5,18,14,.56) 100%
+      rgba(8,32,25,.34) 0%,
+      rgba(8,32,25,.48) 48%,
+      rgba(5,18,14,.66) 100%
     ),
     linear-gradient(
       180deg,
@@ -668,6 +668,10 @@ body.solid-nav .nav:not(.scrolled) {
 .dish-link::after { content:'→'; transition: transform .3s var(--ease); }
 .dish-link:hover::after { transform: translateX(4px); }
 .featured-foot { text-align: center; margin-top: 80px; }
+
+.around-pub-grid { align-items: stretch; }
+.around-pub-grid .dish { display: flex; flex-direction: column; height: 100%; }
+.around-pub-grid .dish-info { flex: 1; }
 
 /* ─────────────────────────────────────────────────────────────
    EVENTS
@@ -1534,6 +1538,232 @@ body.solid-nav .nav:not(.scrolled) {
 .field select:focus,
 .field textarea:focus { border-bottom-color: var(--green); }
 
+/* Inline admin editing */
+.admin-control-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+.events-admin-bar {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto 28px;
+  max-width: 1280px;
+  justify-content: flex-end;
+}
+.admin-mini-btn,
+.admin-floating-actions button {
+  border: 1px solid rgba(201,162,74,.65);
+  background: rgba(8,32,25,.92);
+  color: var(--cream);
+  padding: 8px 12px;
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background .25s var(--ease), border-color .25s var(--ease), color .25s var(--ease);
+}
+.admin-mini-btn:hover,
+.admin-floating-actions button:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink);
+}
+.admin-mini-btn.ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--rule);
+  text-decoration: none;
+}
+.admin-mini-btn.ghost:hover {
+  background: var(--ink);
+  color: var(--cream);
+}
+.admin-mini-btn.ghost.light {
+  color: var(--cream);
+  border-color: rgba(244,236,216,.35);
+  background: rgba(244,236,216,.06);
+}
+.admin-mini-btn.ghost.light:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink);
+}
+.admin-editable-wrap,
+.admin-card-wrap {
+  position: relative;
+}
+.admin-floating-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 8px;
+  opacity: .95;
+}
+.admin-editable-wrap {
+  padding-bottom: 10px;
+}
+.admin-card-wrap .card-actions {
+  margin-top: 18px;
+}
+.admin-edit-toolbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  max-width: 1280px;
+  margin: 0 auto 42px;
+}
+.menu-inner > .admin-edit-toolbar {
+  max-width: none;
+}
+.edit-preview {
+  position: relative;
+}
+.admin-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.admin-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: rgba(8,16,13,.76);
+  cursor: pointer;
+}
+.admin-modal-card {
+  position: relative;
+  z-index: 1;
+  width: min(720px, 100%);
+  max-height: min(86vh, 820px);
+  overflow-y: auto;
+  background: var(--cream);
+  border: 1px solid rgba(201,162,74,.55);
+  box-shadow: 0 24px 80px rgba(0,0,0,.45);
+  padding: 32px;
+  display: grid;
+  gap: 18px;
+}
+.admin-modal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 16px;
+}
+.admin-modal-head h3 {
+  font-family: var(--display);
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--green);
+}
+.admin-modal-head button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--ink);
+  font-size: 28px;
+  cursor: pointer;
+}
+.admin-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.admin-modal-card label,
+.login-card label {
+  display: grid;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+.admin-modal-card input,
+.admin-modal-card select,
+.admin-modal-card textarea,
+.login-card input {
+  width: 100%;
+  border: 1px solid var(--rule);
+  background: var(--cream-soft);
+  color: var(--ink);
+  padding: 12px 14px;
+  font-family: var(--sans);
+  font-size: 16px;
+  outline: none;
+}
+.admin-modal-card textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.admin-checkbox {
+  align-content: end;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+.admin-checkbox input {
+  width: auto;
+}
+.admin-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.admin-error {
+  color: #8a1f1f;
+  font-size: 14px;
+  font-weight: 700;
+}
+.login-section {
+  min-height: 560px;
+  background: var(--cream);
+  padding: 100px 24px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-card {
+  width: min(520px, 100%);
+  background: var(--cream-soft);
+  border: 1px solid var(--rule);
+  padding: 44px 40px;
+  display: grid;
+  gap: 22px;
+  text-align: center;
+}
+.login-card h1 {
+  font-family: var(--display);
+  font-size: clamp(46px, 7vw, 74px);
+  font-weight: 500;
+  line-height: 1;
+  color: var(--ink);
+}
+.login-card h1 em {
+  color: var(--green);
+  font-style: italic;
+}
+.login-card p {
+  color: var(--stone);
+  font-size: 16px;
+}
+.login-card label {
+  text-align: left;
+}
+.login-card .btn {
+  justify-content: center;
+}
+
 /* ─────────────────────────────────────────────────────────────
    FOOTER
 ───────────────────────────────────────────────────────────── */
@@ -1857,4 +2087,14 @@ body.solid-nav .nav:not(.scrolled) {
     right: 16px;
     bottom: 16px;
   }
+  .admin-form-grid { grid-template-columns: 1fr; }
+  .admin-modal { padding: 14px; align-items: flex-start; }
+  .admin-modal-card { padding: 24px 18px; margin-top: 24px; }
+  .admin-floating-actions {
+    margin-top: 8px;
+    justify-content: flex-end;
+  }
+  .events-admin-bar { justify-content: center; }
+  .admin-edit-toolbar { justify-content: center; }
+  .login-card { padding: 34px 24px; }
 }
