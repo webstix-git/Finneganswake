@@ -559,6 +559,14 @@ body.solid-nav .nav:not(.scrolled) {
   border-top: 1px solid var(--rule);
   padding-top: 40px;
 }
+.est-stats--3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px 48px;
+}
+.est-stats--3 .est-stat {
+  border-right: none;
+  padding: 8px 24px;
+}
 .est-stat { text-align: center; border-right: 1px solid var(--rule); padding: 8px 16px; }
 .est-stat:last-child { border-right: none; }
 .est-stat .num {
@@ -669,9 +677,16 @@ body.solid-nav .nav:not(.scrolled) {
 .dish-link:hover::after { transform: translateX(4px); }
 .featured-foot { text-align: center; margin-top: 80px; }
 
-.around-pub-grid { align-items: stretch; }
+.around-pub-grid {
+  align-items: stretch;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1280px;
+  gap: 48px;
+  margin: 0 auto;
+}
 .around-pub-grid .dish { display: flex; flex-direction: column; height: 100%; }
 .around-pub-grid .dish-info { flex: 1; }
+.around-pub-grid .dish-info p { max-width: none; }
 
 /* ─────────────────────────────────────────────────────────────
    EVENTS
@@ -2045,6 +2060,7 @@ body.solid-nav .nav:not(.scrolled) {
   .nav-side.right .nav-reserve { display: none; }
   .nav-toggle { margin-left: 0; }
   .dishes, .testi-grid { grid-template-columns: 1fr 1fr; }
+  .around-pub-grid { grid-template-columns: repeat(3, 1fr); gap: 32px; }
   .events-grid { grid-template-columns: 1fr 1fr; }
   .values-grid { grid-template-columns: 1fr 1fr; }
   .gallery-wall { grid-template-columns: repeat(3, 1fr); }
@@ -2068,12 +2084,14 @@ body.solid-nav .nav:not(.scrolled) {
   }
   .home-gallery-lightbox-inner { gap: 6px; padding: 0 4px; }
   .dishes, .testi-grid, .events-grid, .values-grid, .specials-grid { grid-template-columns: 1fr; }
+  .around-pub-grid { grid-template-columns: 1fr; gap: 48px; }
   .special-card { padding: 44px 28px 36px; }
   .special-list .perk { font-size: 19px; }
   .gallery-wall { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .crumbs { padding: 14px 24px; }
   .crumbs-inner { font-size: 12px; letter-spacing: .18em; }
   .est-stats { grid-template-columns: repeat(2, 1fr); }
+  .est-stats--3 { grid-template-columns: 1fr; gap: 32px; }
   .est-stat:nth-child(2) { border-right: none; }
   .featured, .events, .story, .menu-preview, .home-reviews, .home-gallery-section, .gallery, .testi, .contact-form-wrap { padding: 80px 24px; }
   .page-hero { padding: calc(var(--nav-h) + 32px) 24px 64px; }

@@ -61,8 +61,7 @@ export default function HomePage() {
           a <em>burger</em> very, very seriously.
         </p>
 
-        <div className="est-stats">
-          <div className="est-stat"><div className="num">20<sup>yrs</sup></div><div className="label">Years Pouring</div></div>
+        <div className="est-stats est-stats--3">
           <div className="est-stat"><div className="num">832</div><div className="label">Trivia Nights</div></div>
           <div className="est-stat"><div className="num">14</div><div className="label">Local Charities</div></div>
           <div className="est-stat"><div className="num">1</div><div className="label">Famous Burger</div></div>

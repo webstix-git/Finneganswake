@@ -52,12 +52,12 @@ export default async function EventsPage() {
             <h2 className="h-section" style={{ marginTop: 24 }}>Around <em>The Pub</em></h2>
           </div>
           <div className="right reveal">
-            <span className="num">04</span>
+            <span className="num">03</span>
             <span>reasons to drop in</span>
           </div>
         </div>
 
-        <div className="dishes around-pub-grid" style={{ gridTemplateColumns: "repeat(2,1fr)", maxWidth: 980, gap: 48, margin: "0 auto" }}>
+        <div className="dishes around-pub-grid">
           <article className="dish reveal">
             <div className="dish-frame" style={{ aspectRatio: "16/10" }}>
               <span className="dish-num">i.</span>
