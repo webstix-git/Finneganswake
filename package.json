@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed:blob": "node scripts/seed-blob.mjs"
   },
   "dependencies": {
+    "@vercel/blob": "^2.3.0",
     "next": "^16.2.6",
     "react": "18.3.1",
     "react-dom": "18.3.1"

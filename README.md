@@ -71,6 +71,20 @@ Per the brief, **don't promote alcohol heavily** — insurance reason. The Menu 
 
 Hero, dishes, gallery, and story use Unsplash placeholders. Swap them out for real photos from the Google Drive folder (see the brief). Place real photos in `public/gallery/` and update the `PHOTOS` array in `app/gallery/page.tsx`.
 
+## Admin editing (menu & promotions)
+
+Admins can edit menu items and promotions at `/menu-edit` and `/promotions-edit` after logging in at `/login`. Set `ADMIN_PASSWORD` in your environment.
+
+**On Vercel**, the filesystem is read-only, so content is stored in **Vercel Blob** instead of `data/*.json`:
+
+1. In the Vercel project, open **Storage → Blob** and create/link a Blob store (this adds `BLOB_READ_WRITE_TOKEN` to the project).
+2. Set `ADMIN_PASSWORD` in **Project → Settings → Environment Variables**.
+3. Deploy, then either:
+   - Let the app **auto-seed** on first read (copies bundled `data/*.json` into Blob), or
+   - Run `npm run seed:blob` locally after `vercel env pull` to upload current JSON upfront.
+
+Local development without `BLOB_READ_WRITE_TOKEN` continues to read/write `data/menu.json` and `data/promotions.json` on disk.
+
 ## Going further
 
 If you want to take this into V0 to refine sections, drop in the prompt from `../02-v0-prompt/V0-PROMPT.md`. The prompt is fully self-contained.
