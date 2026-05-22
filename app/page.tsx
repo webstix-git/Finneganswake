@@ -101,12 +101,12 @@ export default function HomePage() {
             <div className="dish-frame">
               <span className="dish-num">ii.</span>
               <span className="dish-badge">House Classic</span>
-              <img alt="Regular cheeseburger and fries at Finnegan&apos;s Wake" src="/images/dish-spicy-burger.png" />
+              <img alt="Spicy cheeseburger and fries at Finnegan&apos;s Wake" src="/images/dish-spicy-burger.png" />
             </div>
             <div className="dish-info">
-              <div className="kind">Smashed Patty · American Cheese</div>
-              <h3>Regular <em>Cheeseburger</em></h3>
-              <p>A straight-up pub cheeseburger: smashed beef, melted American, pickles, onion, and house sauce on a soft bun. Served with fries.</p>
+              <div className="kind">Smashed Patty · Pepperjack Cheese</div>
+              <h3>Spicy <em>Cheeseburger</em></h3>
+              <p>Smashed beef patty topped with melted pepperjack cheese, crispy fried onion straws, and pickled jalapeños. Served with fries and a side of chipotle aioli.</p>
             </div>
           </article>
 
