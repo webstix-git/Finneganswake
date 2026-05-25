@@ -11,7 +11,7 @@ import { NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
 
 function cleanPromotion(promotion: Partial<PromotionData>): PromotionData {
-  return {
+  const cleaned: PromotionData = {
     id: promotion.id ?? makeId("promo"),
     tag: promotion.tag?.trim() ?? "",
     title: normalizeTitle(promotion.title),
@@ -21,6 +21,8 @@ function cleanPromotion(promotion: Partial<PromotionData>): PromotionData {
     statValue: promotion.statValue?.trim() ?? "",
     featured: Boolean(promotion.featured),
   };
+  if (promotion.link) cleaned.link = promotion.link.trim();
+  return cleaned;
 }
 
 async function requireAdmin() {
