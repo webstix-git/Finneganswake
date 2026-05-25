@@ -16,6 +16,7 @@ const blankDraft: Draft = {
   statLabel: "",
   statValue: "",
   featured: false,
+  link: "",
 };
 
 export default function PromotionsEditor({
@@ -80,19 +81,39 @@ export default function PromotionsEditor({
       <div className="events-grid">
         {data.promotions.map((promotion) => (
           <article className={`event-card${promotion.featured ? " feature" : ""} reveal admin-card-wrap`} key={promotion.id}>
-            <span className="event-tag">{promotion.tag}</span>
-            <h3 className="event-title">
-              <EditableTitleText title={promotion.title} />
-            </h3>
-            <p className="event-when">{promotion.when}</p>
-            <p className="event-desc">{promotion.desc}</p>
-            <div className="event-foot">
-              <div className="stat">
-                <strong>{promotion.statLabel}</strong>
-                {promotion.statValue}
-              </div>
-              <span className="event-arrow">↗</span>
-            </div>
+            {promotion.link ? (
+              <a href={promotion.link} target="_blank" rel="noopener noreferrer" className="event-card-link">
+                <span className="event-tag">{promotion.tag}</span>
+                <h3 className="event-title">
+                  <EditableTitleText title={promotion.title} />
+                </h3>
+                <p className="event-when">{promotion.when}</p>
+                <p className="event-desc">{promotion.desc}</p>
+                <div className="event-foot">
+                  <div className="stat">
+                    <strong>{promotion.statLabel}</strong>
+                    {promotion.statValue}
+                  </div>
+                  <span className="event-arrow">↗</span>
+                </div>
+              </a>
+            ) : (
+              <>
+                <span className="event-tag">{promotion.tag}</span>
+                <h3 className="event-title">
+                  <EditableTitleText title={promotion.title} />
+                </h3>
+                <p className="event-when">{promotion.when}</p>
+                <p className="event-desc">{promotion.desc}</p>
+                <div className="event-foot">
+                  <div className="stat">
+                    <strong>{promotion.statLabel}</strong>
+                    {promotion.statValue}
+                  </div>
+                  <span className="event-arrow">↗</span>
+                </div>
+              </>
+            )}
             {isAdmin ? (
               <div className="admin-floating-actions card-actions" aria-label={`Controls for ${promotion.title.emphasis || promotion.title.before}`}>
                 <button type="button" onClick={() => setDraft(promotion)}>

@@ -8,7 +8,7 @@
         "emphasis": "Trivia",
         "after": ""
       },
-      "when": "Every Wednesday, 7:30 p.m. sharp.",
+      "when": "Every Wednesday, 7 PM sharp.",
       "desc": "The longest-running trivia night in Springfield. Six rounds, no phones, and fierce tiebreakers that keep teams coming back week after week. A local favorite for over fourteen years.",
       "statLabel": "Held since 2010",
       "statValue": "832 nights · 5,000+ players",
@@ -25,7 +25,8 @@
       "when": "Saturdays on The Square.",
       "desc": "We provide the bartending services for Live From Downtown, every Saturday May through September. Local songwriters, fiddlers, and small bands take the square. Pints kept moving.",
       "statLabel": "This Season",
-      "statValue": "21 acts booked"
+      "statValue": "21 acts booked",
+      "link": "https://www.livefromdowntownsgf.com/"
     },
     {
       "id": "finnsmas",

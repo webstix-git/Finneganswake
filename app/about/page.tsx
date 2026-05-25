@@ -93,7 +93,7 @@ export default function AboutPage() {
             <div className="value reveal">
               <div className="num">02</div>
               <h4>Longest-Running <em>Trivia</em></h4>
-              <p>The longest-running trivia night in Springfield. Six rounds, no phones, and a vicious tiebreaker. Wednesday at 7:30.</p>
+              <p>The longest-running trivia night in Springfield. Six rounds, no phones, and a vicious tiebreaker. Wednesday at 7.</p>
             </div>
             <div className="value reveal">
               <div className="num">03</div>

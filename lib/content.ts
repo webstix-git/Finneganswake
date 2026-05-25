@@ -44,6 +44,7 @@ export type PromotionData = {
   statLabel: string;
   statValue: string;
   featured?: boolean;
+  link?: string;
 };
 
 export type PromotionsData = {
