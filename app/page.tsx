@@ -140,7 +140,7 @@ export default function HomePage() {
           <article className="event-card feature reveal">
             <span className="event-tag">Wednesdays · Weekly</span>
             <h3 className="event-title">Pub <em>Trivia</em></h3>
-            <p className="event-when">Every Wednesday, 7:30 p.m. sharp.</p>
+            <p className="event-when">Every Wednesday, 7 PM sharp.</p>
             <p className="event-desc">The longest-running trivia night in Springfield. Six rounds, no phones, and fierce tiebreakers that keep teams coming back week after week. A local favorite for over fourteen years.</p>
             <div className="event-foot">
               <div className="stat"><strong>Held since 2010</strong>832 nights · 5,000+ players</div>
@@ -149,14 +149,16 @@ export default function HomePage() {
           </article>
 
           <article className="event-card reveal">
-            <span className="event-tag">May – September</span>
-            <h3 className="event-title">Live From <em>Downtown</em></h3>
-            <p className="event-when">Saturdays on The Square.</p>
-            <p className="event-desc">We provide bartending services for Live From Downtown — every Saturday from May through September. Local songwriters, fiddlers and bands play the square; we keep the pints moving.</p>
-            <div className="event-foot">
-              <div className="stat"><strong>This Season</strong>21 acts booked</div>
-              <span className="event-arrow">↗</span>
-            </div>
+            <a href="https://www.livefromdowntownsgf.com/" target="_blank" rel="noopener noreferrer" className="event-card-link">
+              <span className="event-tag">May – September</span>
+              <h3 className="event-title">Live From <em>Downtown</em></h3>
+              <p className="event-when">Saturdays on The Square.</p>
+              <p className="event-desc">We provide bartending services for Live From Downtown — every Saturday from May through September. Local songwriters, fiddlers and bands play the square; we keep the pints moving.</p>
+              <div className="event-foot">
+                <div className="stat"><strong>This Season</strong>21 acts booked</div>
+                <span className="event-arrow">↗</span>
+              </div>
+            </a>
           </article>
 
           <article className="event-card reveal">
